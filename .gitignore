@@ -1,0 +1,6 @@
+*.diff
+*.orig
+*.rej
+*.o
+dwm
+patches/
