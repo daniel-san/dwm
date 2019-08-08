@@ -53,3 +53,4 @@ Applied Patches
 The following are the patches that were added on my build of dwm:
   - autostart -- https://dwm.suckless.org/patches/autostart/
   - systray -- https://dwm.suckless.org/patches/systray/
+  - selfrestart -- https://dwm.suckless.org/patches/selfrestart/
