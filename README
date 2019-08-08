@@ -46,3 +46,10 @@ Configuration
 -------------
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
+
+
+Applied Patches
+----------------
+The following are the patches that were added on my build of dwm:
+  - autostart -- https://dwm.suckless.org/patches/autostart/
+  - systray -- https://dwm.suckless.org/patches/systray/
