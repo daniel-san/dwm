@@ -55,3 +55,4 @@ The following are the patches that were added on my build of dwm:
   - systray -- https://dwm.suckless.org/patches/systray/
   - selfrestart -- https://dwm.suckless.org/patches/selfrestart/
   - statusallmons -- https://dwm.suckless.org/patches/statusallmons/
+  - rotatestack -- https://dwm.suckless.org/patches/rotatestack/
