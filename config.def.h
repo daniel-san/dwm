@@ -77,7 +77,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      spawn,          {.v = roficmd } },
 	{ MODKEY,                       XK_n,      spawn,          CMD("pcmanfm") },
 	{ MODKEY,                       XK_w,      spawn,          CMD("chromium") },
-	{ MODKEY,                       XK_F12,    spawn,          CMD("/home/daniel/scripts/bookmarks.sh") },
+	{ MODKEY,                       XK_F12,    spawn,          CMD("~/scripts/bookmarks.sh") },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
