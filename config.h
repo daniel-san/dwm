@@ -67,7 +67,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_red, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "kitty", NULL };
 static const char *roficmd[] = { "rofi", "-show", "combi", "-combi-modi", "run,drun" };
 
 #include "selfrestart.c"
@@ -77,7 +77,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_d,      spawn,          {.v = roficmd } },
 	{ MODKEY,                       XK_n,      spawn,          CMD("pcmanfm") },
-	{ MODKEY,                       XK_w,      spawn,          CMD("chromium") },
+	{ MODKEY,                       XK_w,      spawn,          CMD("firefox") },
 	{ MODKEY,                       XK_F12,    spawn,          CMD("~/scripts/bookmarks.sh") },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
