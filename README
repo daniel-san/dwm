@@ -57,3 +57,5 @@ The following are the patches that were added on my build of dwm:
   - statusallmons -- https://dwm.suckless.org/patches/statusallmons/
   - rotatestack -- https://dwm.suckless.org/patches/rotatestack/
   - gridmode -- https://dwm.suckless.org/patches/gridmode/
+  - pertag -- https://dwm.suckless.org/patches/pertag/
+  - sticky -- https://dwm.suckless.org/patches/sticky/
