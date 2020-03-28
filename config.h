@@ -9,7 +9,11 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "mononoki:size=13" };
+static const char *fonts[]          = {  "Mononoki Nerd Font:size=12",
+										 "Noto Sans Mono:size=12:antialias=true:autohint=true",
+										 "Symbola:size=12:antialias=true:autohint=true",
+										 "Monospace:size=12:antialias=true:autohint=true"
+										 };
 static const char dmenufont[]       = "mononoki:size=13";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
