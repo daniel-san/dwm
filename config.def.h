@@ -9,7 +9,13 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "mononoki:size=13" };
+static const int horizpadbar        = 3;        /* horizontal padding for statusbar */
+static const int vertpadbar         = 6;        /* vertical padding for statusbar */
+static const char *fonts[]          = {  "Mononoki Nerd Font:size=12",
+										 "Noto Sans Mono:size=12:antialias=true:autohint=true",
+										 "Symbola:size=12:antialias=true:autohint=true",
+										 "Monospace:size=12:antialias=true:autohint=true"
+										 };
 static const char dmenufont[]       = "mononoki:size=13";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -82,6 +88,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_w,      spawn,          CMD("firefox") },
 	{ MODKEY,                       XK_F11,    spawn,          CMD("~/scripts/redshift.sh") },
 	{ MODKEY,                       XK_F12,    spawn,          CMD("~/scripts/bookmarks.sh") },
+    // keybinds using the keypad
+    { MODKEY,                       XK_KP_1,   spawn,          CMD("~/scripts/generateCpf.sh") },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
@@ -118,6 +126,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
+  // restart/quit dwm binds
 	{ MODKEY|ShiftMask,             XK_r,      self_restart,   {0} },
 	{ MODKEY|ShiftMask,             XK_x,      spawn,          CMD("i3lock --color 475263") },
 	{ MODKEY|ShiftMask,             XK_z,      quit,           {0} },
